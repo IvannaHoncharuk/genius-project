@@ -38,12 +38,27 @@
 }
 
 /*Base*/
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 body {
   color: var(--color-brand-dark);
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 
 address {
@@ -54,8 +69,29 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /*Button*/
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
@@ -81,15 +117,30 @@ ul {
 }
 
 /*Hero section*/
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-title .accent-light {
   color: var(--color-brand-light);
+}
+
+/* Tradition section */
+
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
 }
 
 /*Advantages section*/
@@ -116,6 +167,11 @@ ul {
 /* Chiefs section */
 
 .chiefs-title {
+  margin-bottom: 80px;
+}
+
+.chief-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
@@ -123,6 +179,10 @@ ul {
 /* Formats section */
 
 .formats-title {
+  margin-bottom: 80px;
+}
+
+.format-title {
   font-size: 24px;
   font-weight: 600;
 }
@@ -130,6 +190,11 @@ ul {
 .formats-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* Contacts section */
+.contacts-title {
+  margin-bottom: 16px;
 }
 
 /* Footer */
