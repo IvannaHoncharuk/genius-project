@@ -235,8 +235,12 @@ ul {
 }
 
 .chiefs-title {
-  max-width: 520px;
   margin: 0 auto 80px;
+  position: relative;
+}
+
+.section-title.centered {
+  align-items: center;
 }
 
 .chiefs-title::after,
@@ -245,6 +249,18 @@ ul {
   width: 352px;
   border: 2px solid #cfcfbc;
   content: '';
+}
+
+.chiefs-title::before {
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+}
+
+.chiefs-title::after {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
 }
 
 .chief-title {
@@ -366,6 +382,29 @@ ul {
   background-position: center;
   background-size: cover;
   padding: 32px 0;
+  position: relative;
+}
+
+.footer::after,
+.footer::before {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: '';
+}
+
+.footer::after {
+  background-image: url(../image/bread.png);
+  width: 380px;
+  height: 190px;
+  right: 0;
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../image/littlebread.png);
+  left: 0;
 }
 
 .footer-container {
@@ -415,4 +454,37 @@ ul {
 
 .adress-copyright {
   font-size: 14px;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
