@@ -501,8 +501,10 @@ header {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -515,4 +517,60 @@ header {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  font-size: 16px;
+  line-height: 1.17;
+  color: #a18268;
+  transition: transform 0.3s;
+}
+
+.form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+}
+
+.input {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #a18268;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-primary-dark);
+}
+
+.input:focus {
+  border-color: var(--color-brand-light);
+  outline: none;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.form-text {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
