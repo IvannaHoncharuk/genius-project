@@ -311,17 +311,29 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
-        <form name="order-call-form" autocomplete="off" novalidate>
+        <form name="order-call-form" autocomplete="off">
           <h2>Замовити дзвінок</h2>
           <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
           <div class="form-field">
             <label class="form-label" for="user-name">Ім'я</label>
-            <input class="input" type="text" id="user-name" name="user-name" />
+            <input
+              class="input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              required
+            />
           </div>
 
           <div class="form-field">
             <label class="form-label" for="user-tel">Телефон</label>
-            <input class="input" type="tel" id="user-tel" name="user-tel" />
+            <input
+              class="input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              required
+            />
           </div>
 
           <div class="form-field">
@@ -331,6 +343,7 @@
               type="email"
               id="user-email"
               name="user-email"
+              required
             />
           </div>
 
