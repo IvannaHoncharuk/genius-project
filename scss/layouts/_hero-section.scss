@@ -10,16 +10,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
-}
 
-.hero-title {
-  color: var(--color-primary-light);
-  text-align: center;
-  font-size: 128px;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
-.accent-light {
-  color: var(--color-brand-dark);
+  &__title {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
 }

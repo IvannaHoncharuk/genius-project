@@ -9,12 +9,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="./index.html">
               <img src="./image/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
               </li>
@@ -32,63 +32,74 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent-light">Сучасна</span> пекарня
+          <h1 class="hero-section__title">
+            <span class="text-brand">Сучасна</span> пекарня
           </h1>
         </div>
       </section>
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">Великий попит на ринку</li>
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управлінська команда</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Великий попит на ринку</li>
+            <li class="advantages-section__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="advantages-section__item">
+              Досвідчена управлінська команда
+            </li>
           </ul>
         </div>
       </section>
-      <section class="section traditions-section" id="traditions-section">
+      <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <div class="traditions-container">
-            <div class="traditions-content">
-              <h2 class="section-title traditions-title">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="traditions-section__title section-title">
                 Новий формат традицій
               </h2>
-              <p>
-                <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-                зберегла смак традиційної випічки та натуральність інгредієнтів.
+              <p
+                class="advantages-section__text advantages-section__text--limited"
+              >
+                <span class="text-brand text-bold uppercase">shop bakery</span>
+                — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та натуральність інгредієнтів.
               </p>
               <p>
                 Ми працюємо як найвідоміші мережі—<br /><span
+                  class="text-brand text-bold"
                   >5 хвилин і замовлення готове</span
                 >.<br />А ще у наших пекарень стильний дизайн<br />
                 та висока якість обслуговування!
               </p>
             </div>
             <img
+              class="traditions-section__image"
               src="./image/baker-man.jpg"
               alt="Чоловікар пекар дивиться на батони з посмішкою"
             />
           </div>
         </div>
       </section>
-      <section class="section" id="chiefs-section">
+      <section class="chiefs-section section" id="chiefs-section">
         <div class="container">
-          <h2 class="section-title chiefs-title centered">
+          <h2
+            class="chiefs-section__title section__title section__title--centered"
+          >
             Наші найкращі <br />
-            <span class="accent-dark">шеф-кухарі</span>
+            <span class="text-brand-dark">шеф-кухарі</span>
           </h2>
-          <ul class="chiefs-list">
-            <li class="chiefs-item">
-              <article class="chief-card">
+          <ul class="chiefs-section__list">
+            <li class="chiefs-section__item">
+              <article class="chiefs-section__card">
                 <img
-                  class="chief-photo"
+                  class="chiefs-section__photo"
                   src="./image/Nastya.jpg"
                   alt="Nastya chief"
                 />
                 <div>
                   <h3 class="chief-title">Настя</h3>
-                  <div class="chief-text">
+                  <div class="chiefs-section__text">
                     <p>Привіт, я Настя!</p>
                     <p>
                       Вже 10 років, я втілюю <br />
@@ -102,16 +113,16 @@
                 </div>
               </article>
             </li>
-            <li class="chiefs-item">
-              <article class="chief-card">
+            <li class="chiefs-section__item">
+              <article class="chiefs-section__card">
                 <img
-                  class="chief-photo"
+                  class="chiefs-section__photo"
                   src="./image/Vlad.jpg"
                   alt="Vlad chief"
                 />
                 <div>
-                  <h3 class="chief-title">Влад</h3>
-                  <div class="chief-text">
+                  <h3 class="chiefs-section__title">Влад</h3>
+                  <div class="chiefs-section__text">
                     <p>Привіт, я Влад!</p>
                     <p>
                       Мій кодитерський стаж вже 18 років.
