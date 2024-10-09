@@ -15,6 +15,18 @@
     padding: 272px 0;
   }
 
+  @media screen and (min-device-pixel-ration: 2dppx),
+    (min-resolution: 192dpi),
+    (min-resolution: 2) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(../image/couple-in-bakery@2x.jpg);
+  }
+
   &__title {
     margin-bottom: 48px;
     color: var(--color-primary-light);
