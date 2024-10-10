@@ -1,14 +1,12 @@
 .formats-section {
-  &__container {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
 
-  &__list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  &__container {
+    overflow: hidden;
   }
 
   &__item {
