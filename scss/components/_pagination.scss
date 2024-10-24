@@ -1,5 +1,6 @@
 .pagination {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 
@@ -9,5 +10,9 @@
     padding: 0;
     background-color: #a18268;
     border-radius: 50%;
+
+    &--active {
+      background-color: #73835a;
+    }
   }
 }

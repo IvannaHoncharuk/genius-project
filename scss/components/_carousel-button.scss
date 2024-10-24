@@ -13,17 +13,10 @@
 
   &:hover {
     background-color: var(--color-primary-dark);
-  }
-
-  &:hover &__arrow {
     fill: var(--color-primary-light);
   }
 
   &.next {
     transform: rotate(180deg);
-  }
-
-  &__arrow {
-    fill: var(--color-primary-dark);
   }
 }

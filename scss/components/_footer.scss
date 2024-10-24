@@ -1,4 +1,5 @@
 .footer {
+  text-align: center;
   background-image: url('../image/footer-background.png');
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
@@ -30,13 +31,24 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
-  &__nav {
-    flex-basis: 50%;
+  &__nav,
+  .adress {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
   }
 
   &__logo {
@@ -49,10 +61,6 @@
 }
 
 .adress {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-
   &__list,
   &__info {
     flex-grow: 1;
